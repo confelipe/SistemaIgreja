@@ -10,10 +10,13 @@ let cidade;
 let estado;
 let pais ;
 let  cep ;
+let email;
+let batizado;
 
 
 
 function salvarDados(){
+    
      nome      =    document.getElementById("nome");
      sobreNome = document.getElementById("sobreNome");
      dataNasc  = document.getElementById("dataNasc");
@@ -26,6 +29,8 @@ function salvarDados(){
      estado    = document.getElementById("estado");
      pais      = document.getElementById("pais");
      cep       = document.getElementById("cep");
+     email     = document.getElementById("email");
+     batizado  = document.getElementById("batizado");
 
     let dados = JSON.parse(localStorage.getItem("dadosMembro"));
 
@@ -46,12 +51,16 @@ function salvarDados(){
         cidade: cidade.value,
         estado: estado.value,
         pais : pais.value,
-        cep : cep.value
+        cep : cep.value,
+        email: email.value,
+        batizado: batizado.value
     }
     dados.push(registros);
     
     
     localStorage.setItem("dadosMembro",JSON.stringify(dados));
+    
+    limparDadosDoFormulario();
 
 }
 function limparDadosDoFormulario(){
@@ -67,4 +76,6 @@ function limparDadosDoFormulario(){
      document.getElementById("estado").value="";
      document.getElementById("pais").value="";
      document.getElementById("cep").value="";
+     document.getElementById("email").value="";
+     document.getElementById("batizado").value="";
 }
