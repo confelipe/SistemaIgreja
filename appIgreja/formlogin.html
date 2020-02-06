@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>Login Usuário</title>  
+     <script type="text/javascript" src="Js/login.js"></script>
+     <link rel="stylesheet" type="text/css" href="css/login.css"/>
+
+    <!-- Principal CSS do Bootstrap -->
+    <link href="/home/dinho/Documentos/appIgreja/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos customizados para esse template -->
+    <link href="/home/dinho/Documentos/appIgreja/css/signin.css" rel="stylesheet">
+    
+    <body class="text-center">
+      <div class="container">
+        <div class="row formlogin" style="margin: 0 auto; margin-top: 120px; ">
+          <form  class="container"  method="POST" >
+          
+            <h1 class="h3 mb-3 font-weight-normal">IAMJ</h1>
+            <h1 class="h3 mb-3 font-weight-normal">Faça o Login</h1>
+            <label for="inputLogin" class="sr-only">Endereço de E-mail</label>
+            <input type="email"  id="email" class="form-control" placeholder="Seu email" required autofocus/><br/>
+            <label for="inputSenha" class="sr-only">Sua Senha</label>
+            <input type="password" name="senha" id="senha" class="form-control" placeholder="Sua Senha" required>
+         
+            <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Lembrar de mim
+                </label>
+              </div>
+              </form>
+              <button style="width: 100%"  onclick="logar()" class="btn btn-outline-primary" >Entrar</button> 
+        </div>
+       
+        <p class="mt-5 mb-3 text-muted">&copy; Sistema desenvolvido pelos colaboradores internos da IAMJ, com 
+          todos direitos os reservados 2020</p>
+      </div>
+        
+                      
+    </body>
+
+</html>
